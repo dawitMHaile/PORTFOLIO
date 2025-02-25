@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Section Styling */
+.projects-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-header h1 {
+    font-size: 36px;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+.projects-header p {
+    font-size: 18px;
+    color: #555;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.project-card {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+/* Project Details */
+.project-details {
+    padding: 20px;
+}
+
+.project-details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    animation: fadeIn 2.5s ease-out;
+}
+
+.project-details .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.project-details .btn:hover {
+    background-color: #45a049;
+}
+
+/* Unique Color Borders for Each Project */
+.project-one {
+    border: 5px solid #4CAF50; /* Green border */
+}
+
+.project-two {
+    border: 5px solid #FF5733; /* Orange border */
+}
+
+.project-three {
+    border: 5px solid #2980B9; /* Blue border */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Footer Section */
+/* Footer Section */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    color: #4CAF50;
+    transform: translateY(-3px);
+}
+
+.footer-socials {
+    font-size: 24px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+

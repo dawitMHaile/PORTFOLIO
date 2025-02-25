@@ -1,0 +1,303 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #343a40;
+}
+
+.header .logo-container .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+    transform: translateY(-3px);
+}
+
+.visit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.visit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px;
+    text-align: center;
+}
+
+.profile-section {
+    margin-bottom: 60px;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 5px solid #4CAF50; /* Added border around the profile image */
+}
+
+.profile-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    border-top: 3px solid #d4daff; /* Top Border */
+    padding-top: 50px;
+    margin-top: 30px;
+}
+
+.experience-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.experience-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-left: 6px solid #4CAF50; /* Professional left border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-right: 20px;
+}
+
+.experience-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Adding extra space around each card */
+.experience-card:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+/* Responsive Design for Experience Section */
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-icon {
+        margin-bottom: 15px;
+    }
+}
+
+/* Projects Section */
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design for Projects */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .profile-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* Footer Section */
+/* Footer Section */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    color: #4CAF50;
+    transform: translateY(-3px);
+}
+
+.footer-socials {
+    font-size: 24px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
