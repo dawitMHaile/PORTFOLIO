@@ -39,13 +39,17 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: font-size 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-links a:hover {
+    font-size: 25px;
     color: #4CAF50;
-    transform: translateY(-3px);
+    transform: scale(1.05); /* Slightly smaller scale for a more subtle effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
+
+
 
 .visit-btn {
     background-color: #4CAF50;
@@ -92,7 +96,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 30px;
-    border: 5px solid #4CAF50; /* Added border around the profile image */
+    border: 5px solid #3db33d; /* Added border around the profile image */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .profile-img:hover {
@@ -106,6 +110,7 @@ body {
     font-size: 32px;
     color: #333;
     margin-bottom: 10px;
+
 }
 
 .profile-text p {
@@ -123,9 +128,15 @@ body {
 }
 
 .experience-section h2 {
+    background-color: rgb(0, 0, 0);
+    margin-left: 45%;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
     font-size: 36px;
     margin-bottom: 30px;
-    color: #333;
+    color: #ffffff;
+    border-radius: 10px;
 }
 
 .experience-card {
@@ -159,7 +170,26 @@ body {
 
 .experience-text p {
     font-size: 16px;
-    color: #555;
+    color: #fffbfb;
+    background-color: rgb(34, 37, 37);
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+     padding-top: 20px;
+     
+}
+.experience-text p{
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    display: inline-block; /* Ensures element is treated like a block (optional) */
+    color: #ffffff; /* Default text color */
+    transform: scale(1); /* Starts at normal size */
+    opacity: 1; 
+}
+.experience-text:hover p {
+    transform: scale(1.05); /* Gently enlarges the element */
+    opacity: 1; /* Slightly fades out the element */
+    color: #4CAF50; /* Changes text color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft, professional shadow */
 }
 
 /* Adding extra space around each card */
